@@ -197,7 +197,7 @@ sed -ri '/192.168.1.3/d' ${pwd}/clusters/${CLUSTER_NAME}/hosts
 sed -ri '/192.168.1.4/d' ${pwd}/clusters/${CLUSTER_NAME}/hosts
 
 # 输入准备创建ETCD集群的主机位
-echo "enter etcd hosts here (example: 203 202 201) ↓"
+echo "enter etcd hosts here (example: 11 12 13) ↓"
 read -p "" ipnums
 for ipnum in `echo ${ipnums}`
 do
@@ -206,7 +206,7 @@ do
 done
 
 # 输入准备创建KUBE-MASTER集群的主机位
-echo "enter kube-master hosts here (example: 202 201) ↓"
+echo "enter kube-master hosts here (example: 13 12 11) ↓"
 read -p "" ipnums
 for ipnum in `echo ${ipnums}`
 do
@@ -215,7 +215,7 @@ do
 done
 
 # 输入准备创建KUBE-NODE集群的主机位
-echo "enter kube-node hosts here (example: 204 203) ↓"
+echo "enter kube-node hosts here (example: 21 22 23) ↓"
 read -p "" ipnums
 for ipnum in `echo ${ipnums}`
 do
