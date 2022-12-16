@@ -70,7 +70,9 @@ else
 fi
 python -m pip install --upgrade "pip < 21.0"
 
+
 pip -V
+pip install --upgrade setuptools==44.0.0
 pip install --no-cache-dir ansible netaddr
 
 
