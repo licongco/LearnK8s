@@ -4,8 +4,8 @@
 [ $# -ne 6 ] && echo -e "Usage: $0 rootpasswd netnum nethosts cri cni k8s-cluster-name\nExample: bash $0 bogedevops 10.0.1 201\ 202\ 203\ 204 [containerd|docker] [calico|flannel] test\n" && exit 11 
 
 # 变量定义
-export release=3.0.0
-export k8s_ver=v1.19.7  # v1.20.2, v1.19.7, v1.18.15, v1.17.17
+export release=3.2.0
+export k8s_ver=v1.23.1  # v1.20.2, v1.19.7, v1.18.15, v1.17.17
 rootpasswd=$1
 netnum=$2
 nethosts=$3
