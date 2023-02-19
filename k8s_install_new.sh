@@ -1,6 +1,4 @@
 #!/bin/bash
-# auther: boge
-# descriptions:  the shell scripts will use ansible to deploy K8S at binary for siample
 
 # 传参检测
 [ $# -ne 6 ] && echo -e "Usage: $0 rootpasswd netnum nethosts cri cni k8s-cluster-name\nExample: bash $0 bogedevops 10.0.1 201\ 202\ 203\ 204 [containerd|docker] [calico|flannel] test\n" && exit 11 
